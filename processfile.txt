@@ -15,3 +15,14 @@ else
 Select [eMail]  from [MfgLocationEmails] Where [PlantID] = " & vPlantID & " And [CompanyID] = " & vCompID & " Or [PlantID] = " & vPlantID & " And [CompanyID] = 0"
 
 }
+If Null >> Sending to alan.quesinberry@cenveo.com
+
+2) Subject : JPM eMail Order From Web2Plate 
+
+SQL Statement :
+
+Select [eMail] From [JPMorganMailGroup] Where [CompanyID] = " & vCompID & " and [ShipToCity] = '" & vShipCity & "'
+
+If Null >>> -  Sending to  mailto:Jacqueline.Miller@cenveo.com;mailto:Paulette.Evans@cenveo.com
+
+3) Need to check in details
