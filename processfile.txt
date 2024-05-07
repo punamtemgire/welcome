@@ -1,0 +1,17 @@
+
+1) Subject : Manual Order Notification for: ( company name )
+mails are sending to alan.quesinberry@cenveo.com 
+
+SQL Statement :
+
+If PlantId=0
+{
+SELECT eMail FROM MfgLocationEmails WHERE (PlantID = 0)
+
+}
+else
+{
+
+Select [eMail]  from [MfgLocationEmails] Where [PlantID] = " & vPlantID & " And [CompanyID] = " & vCompID & " Or [PlantID] = " & vPlantID & " And [CompanyID] = 0"
+
+}
